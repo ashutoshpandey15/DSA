@@ -2,6 +2,13 @@
 
 using namespace std;
 
+void printingArray(int arr[], int size)
+{
+    for (int i = 0; i <= size; i++)
+    {
+        cout << arr[i];
+    }
+}
 int main()
 {
     cout << "Array Program" << endl;
@@ -10,10 +17,7 @@ int main()
 
     // Printing the above array
     cout << "The Elements of the array are as follows : " << endl;
-    int n = 15;
-    for (int i = 0; i <= n; i++)
-    {
-        cout << Age[i];
-    }
+    int n = 10;
+    printingArray(Age, 5);
     return 0;
 }
