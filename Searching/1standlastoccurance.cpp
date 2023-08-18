@@ -13,7 +13,7 @@ int firstOcc(int arr[],int size,int key){
 
     while (start<=end)
     {
-        if (arr[mid]==key)
+        if (arr[mid]==key)      //if key = mid then store the val in ans and check left as we want to find the first occ
         {
             ans = mid;
             end = mid-1;
@@ -39,7 +39,7 @@ int lastOcc(int arr[],int size,int key){
 
     while (start<=end)
     {
-        if (arr[mid]==key)
+        if (arr[mid]==key)      //if key = mid then store the val in ans and check right as we want to find the last occ
         {
             ans = mid;
             start=mid+1;
