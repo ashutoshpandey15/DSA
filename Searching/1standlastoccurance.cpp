@@ -25,7 +25,33 @@ int firstOcc(int arr[],int size,int key){
             end=mid-1;
         }
 
-        int mid = start + (end-start)/2;
+        mid = start + (end-start)/2;
+        
+    }
+    return ans;
+}
+int lastOcc(int arr[],int size,int key){
+
+    int start = 0;
+    int end =size-1;
+    int mid = start + (end-start)/2;
+    int ans =-1;
+
+    while (start<=end)
+    {
+        if (arr[mid]==key)
+        {
+            ans = mid;
+            start=mid+1;
+        }
+        else if (key>arr[mid]){
+            start = mid +1;
+        }
+        else if (key<arr[mid]){
+            end=mid-1;
+        }
+
+        mid = start + (end-start)/2;
         
     }
     return ans;
@@ -34,9 +60,11 @@ int firstOcc(int arr[],int size,int key){
 int main()
 {
     
-    int even[6]={1,3,2,3,3,4};
-    int fo = firstOcc(even,6,3);
+    int even[5]={1,2,3,3,5};
+    int fo = firstOcc(even,5,3);
+    int lo = lastOcc(even,5,3);
     cout << "The first occ of the number is : " <<fo<<endl;
+    cout << "The last occ of the number is : " <<lo<<endl;
 
     return 0;
 }
