@@ -57,14 +57,22 @@ int lastOcc(int arr[],int size,int key){
     return ans;
 }
 
+
+int totalOcc(int start,int end){
+
+    int total = (end-start)+1;
+    return total;
+
+}
 int main()
 {
     
-    int even[5]={1,2,3,3,5};
-    int fo = firstOcc(even,5,3);
-    int lo = lastOcc(even,5,3);
-    cout << "The first occ of the number is : " <<fo<<endl;
-    cout << "The last occ of the number is : " <<lo<<endl;
+    int even[7]={1,2,3,3,3,3,3};
+    int fo = firstOcc(even,7,3);
+    int lo = lastOcc(even,7,3);
+    cout << "The first occ of the 3 is : " <<fo<<endl;
+    cout << "The last occ of the 3 is : " <<lo<<endl;
+    cout << "The total occ of the 3 is : " <<totalOcc(2,6)<<endl;
 
     return 0;
 }
