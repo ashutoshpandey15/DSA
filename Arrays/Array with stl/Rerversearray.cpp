@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-vector<int> reverse(vector<int> v) {
+vector<int> reverse(vector<int> v) {               // For reversal
 
     int s =0;
     int e =v.size()-1;
@@ -18,7 +18,7 @@ vector<int> reverse(vector<int> v) {
 
 }
 
-void print_vector(vector<int> v){
+void print_vector(vector<int> v){                     // To print the array 
     
     for(int i=0;i<v.size();i++){
         cout<<v[i]<<" ";
@@ -33,7 +33,7 @@ int main()
 
     vector<int> v;
 
-    v.push_back(1);
+    v.push_back(1);                                             //adding values to array 
     v.push_back(2);
     v.push_back(3);
     v.push_back(4);
