@@ -1,3 +1,10 @@
+/**
+ * The above code sorts an array of 0s and 1s by moving all the 0s to the left side and all the 1s to
+ * the right side.
+ * 
+ * @param arr The array containing the elements to be sorted.
+ * @param n The parameter `n` represents the size of the array `arr`. In this case, `n` is equal to 8.
+ */
 #include<iostream>
 using namespace std;
 
