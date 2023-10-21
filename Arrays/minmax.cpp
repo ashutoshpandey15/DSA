@@ -1,3 +1,13 @@
+/**
+ * The above C++ code takes an array as input and finds the maximum and minimum values in the array.
+ * 
+ * @param arr The array of integers that you want to find the maximum and minimum values from.
+ * @param n The variable `n` represents the size of the array `arr[]`. It is used to determine the
+ * number of elements in the array.
+ * 
+ * @return The getMax function returns the maximum value in the array, and the getMin function returns
+ * the minimum value in the array.
+ */
 #include <iostream>
 
 using namespace std;
