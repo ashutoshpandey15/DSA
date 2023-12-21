@@ -1,7 +1,9 @@
 {
     "C_Cpp.default.compilerPath": "f:\\CODIMG\\soft and ides\\cpp\\mingw64.exe",
     "files.associations": {
-        "ostream": "cpp"
+        ".env*": "dotenv",
+        "ostream": "cpp",
+        "iostream": "cpp"
     },
     "docwriter.progress.trackFunctions": false
 }
